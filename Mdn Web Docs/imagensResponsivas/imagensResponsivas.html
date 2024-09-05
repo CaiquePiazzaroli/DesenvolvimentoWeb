@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens responsivas</title>
+</head>
+<body>
+    <h1>Imagens responsivas</h1>
+    <p>
+        São imagens que mudam sua resolução ou seu conteúdo de acordo com o tamanho da tela do dispositivo.
+    </p>
+    <figure>
+        <img srcset="coqueiro-320w.jpg 320w, coqueiro-600w.jpg 600w"
+        sizes="(max-width: 600px) 320px, 600px"
+        src="coqueiro-320w.jpg"
+        alt="coqueiro em uma floresta"/>
+        <figcaption>
+            Esta é uma imagem responsivas que pode ser utilizada pelo navegador na resolução de 320 pixels ou 600 pixels.
+            Irá depender do tamanho da tela do dispositivo. Mas a imagem é a mesma.
+        </figcaption>
+    </figure>
+    <figure>
+        <picture>
+            <source media="(max-width:600px)" width="320px" srcset="coqueiro-retrato.jpg"/> <!--Aparece enquanto 
+            a tela for menor que 600px-->
+            <source media="(max-width:900px)" width="320px" srcset="coqueiro-retrato2.jpg"/><!--Aparece enquanto a tela for
+            menor que 900px-->
+            <img src="coqueiro-retrato3.jpg" width="320" alt="Coqueiro em uma floresta"/><!--Aparece sempre que a tela for
+            maior que 900px-->
+        </picture>
+        <figcaption>
+            Está imagem muda de acordo com o tamanho da tela, para dispositivos menores, a imagem é cortada, para que apenas
+            o que é mais importante apareça. Devemos utilizar a tag picture para poder usar esta funcionalidade.
+        </figcaption>
+    </figure> 
+    <a href="/index.html">Voltar ao início</a> 
+</body>
+</html>
