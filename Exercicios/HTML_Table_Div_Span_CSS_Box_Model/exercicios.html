@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .principal {
+        font-size: 25px;
+        margin: 25px;
+    }
+    .exercicio{
+        border: solid black 2px;
+        background-color: blanchedalmond;
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    /* EX1 */
+    .h3_ex1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: blueviolet;
+    }
+
+    .p_recuo{
+        text-indent: 40px;
+        margin: 0 80px;
+        text-align: center;
+        border: solid rgba(0, 98, 255, 0.566) 20px;
+        letter-spacing: 2px;
+    }
+    .f_motivacional{
+        color: rgb(0, 136, 255);
+        text-decoration: none;
+    }
+
+    /* EX2 */
+    .ex2{
+        height: 200px;
+        color: aliceblue;
+        background-image: url("galaxia.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+    }
+
+    /* EX3 */
+    .ex3{
+        background-color: rgb(150, 226, 150);
+        border: 10px forestgreen solid;
+        width: 400px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .ex3_span {
+        background-color: rgb(90, 246, 246);
+        border: 2px red solid;
+    }
+
+    /* EX4 */
+    .ex4{
+        background-color: #2F475D;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .ex4_bloco {
+        background-color: #F3735A;
+        padding: 15px 10px;
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ex4_bloco_p{
+        margin: auto;
+    }
+
+</style>
+<body>
+    <main class="principal">
+        <h1>Exercicio 3 - HTML Table, Div, Span, CSS Box Model.</h1>
+        <!-- Ex1 -->
+        <section class="exercicio">
+            <h2>Exercicio 1</h2>
+            <div class="enunciado">
+                <p>Utilizando a imagem abaixo como modelo, escreva um parágrafo sobre o cargo que almeja ocupar quando
+                    entrar no mercado de trabalho em Tecnologia da Informação. Defina para o texto:</p>
+                <ul style="text-align: left; margin-left: 25px;">
+                    <li>Título (em caixa alta)</li>
+                    <li>Parágrafo (com recuo)</li>
+                    <li>Uma frase motivacional pra te manter focado no objetivo (destacado em outra cor)</li>
+                    <li>Bordas ao redor do texto</li>
+                    <li>Texto centralizado ao meio da página</li>
+                </ul>
+            </div>
+            <hr>
+            <h2>Resposta</h2>
+            <div class="resposta">
+                <h3 class="h3_ex1">ONDE QUERO ESTAR</h3>
+                <p class="p_recuo">
+                    Atualmente trabalho como suporte de TI mas gostaria
+                    de me tornar engenheiro de software trabalhando como full stack.
+                    Pretendo, alem disso, não continar apenas trabalhando para uma empresa
+                    mas tabém construir meus próprios projetos em produção.
+                    Como dizia minha vó: <a class="f_motivacional" href=""> "Tem que estudar, menino!"</a>
+                </p>
+            </div>
+        </section>
+        <!-- Ex2 -->
+        <section class="exercicio">
+
+            <h2>Exercicio 2</h2>
+            <div class="enunciado">
+                <p>
+                    Adicionando imagens como background É possível adicionar imagens como fundo de um
+                    elemento HTML ou da página. Veja como em https://www.w3schools.com/css/css_background.asp. 
+                    Sabendo disso, adicione um fundo a descrição realizada acima.
+                </p>
+            </div>
+            <hr>
+            <h2>Resposta</h2>
+            <div class="resposta">
+                <div class="ex2">
+                    <p>
+                        Olá eu sou o caique!
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Ex3 -->
+        <section class="exercicio">
+
+            <h2>Exercicio 3</h2>
+            <div class="enunciado">
+                <p>
+                    Reproduza a imagem seguinte em HTML e CSS utilizando as tags DIV e SPAN.
+                </p>
+                <img src="ex3.png" alt="Imagem de um retangulo">
+            </div>
+            <hr>
+            <h2>Resposta</h2>
+            <div class="resposta">
+                <div class="ex3">
+                    <p>Exercicio de <span class="ex3_span">participação 3</span></p>
+                </div>
+            </div>
+        </section>
+        <!-- Ex4 -->
+        <section class="exercicio">
+
+            <h2>Exercicio 4</h2>
+            <div class="enunciado">
+                <p>
+                    Reproduza os esquemas a seguir em uma página HTML utilizando margin e padding.
+                    O conteúdo da página deve seguir as dimensões da imagem:
+                </p>
+                <img src="ex4_1.png" alt="Imagem de um retangulo">
+                <p>
+                    Cada bloco da imagem deve ter as seguintes dimensões internas:
+                </p>
+                <img src="ex4_2.png" alt="Imagem de um retangulo">
+            </div>
+            <hr>
+            <h2>Resposta</h2>
+            <div class="resposta">
+                <div class="ex4">
+                    <div class="ex4_bloco"><p class="ex4_bloco_p">Caique</p></div>
+                    <div class="ex4_bloco"><p class="ex4_bloco_p">Caique</p></div>
+                    <div class="ex4_bloco"><p class="ex4_bloco_p">Caique</p></div>
+                    <div class="ex4_bloco"><p class="ex4_bloco_p">Caique</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
