@@ -16,6 +16,10 @@ html {
     padding: 36px;
 }
 
+.principal {
+    display: flex;
+    justify-content: center;
+}
 
 .cabecalho {
     text-align: center;
@@ -28,7 +32,7 @@ html {
 .foto img {
     width: 250px;
     border-radius: 50%;
-    border: 10px #F4F6FF solid;
+    border: 10px #EB8317 solid;
 }
 
 .saber_mais {
@@ -42,11 +46,11 @@ html {
 }
 
 .container {
-    padding: 24px 18%;
     display: flex;
-    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0 20%;
+    text-align: center;
 }
 
 .filmes {
@@ -57,14 +61,19 @@ html {
 
 .filmes h1 {
     font-size: 1.5em;
+    color: #EB8317;
 }
 
 .filmes p {
-    font-size: 0.8em;
+    font-size: 1em;
+}
+
+.nivel_de_acesso {
+    margin-top: 4px;
 }
 
 .nivel_de_acesso h3 > span {
-    padding: 4px;
+    padding: 0 4px;
     background-color: #EB8317;
 }
 
