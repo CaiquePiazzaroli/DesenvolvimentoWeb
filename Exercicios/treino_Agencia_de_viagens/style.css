@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.navbar {
+    background-color: #091057;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.presentation {
+    background-image: url("beach_banner_test.jpeg");
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10vw;
+}
+
+.presentation div {
+    margin: auto;
+    text-align: center;
+}
+
+.presentation div > h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.presentation div > p {
+    font-size: 1rem;
+}
+
+.more_about {
+    background-color: #091057;
+    padding: 0.5rem;
+    text-align: center;
+}
