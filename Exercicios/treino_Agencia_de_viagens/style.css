@@ -61,3 +61,91 @@ html {
     padding: 0.5rem;
     text-align: center;
 }
+
+main {
+    color: #DBD3D3;
+}
+
+.budget {
+    background-color: #EC8305;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
+}
+
+.budget a {
+    background-color: #091057;
+    color: #DBD3D3;
+    font-size: 0.6rem;
+    padding: 12px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw 18vw;
+    align-items: center;
+}
+
+.services div > img {
+    width: 80px;
+}
+
+.services div {
+    font-size: 1rem;
+    color: #024CAA;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.services p {
+    font-size: 1rem;
+}
+
+.example {
+    background-color: #091057;
+    padding: 24px;
+}
+
+.ex{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  padding: 5px 5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.ex_description {
+    width: 600px;
+}
+
+
+.ex_image {
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+}
+
+.image {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+
+.non_row_reverse{
+    flex-direction: row;
+}
+
