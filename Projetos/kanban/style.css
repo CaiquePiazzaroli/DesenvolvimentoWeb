@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --header: #001F3F;
+    --card_kanban: #fffff;
+    --task_color: #03a3ed;
+    --font_color: #FFE1FF;
+    --color_todo: #FFE700;
+  }
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--font_color);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color: var(--header);
+    flex-grow: 2;
+}
+
+.header h1 {
+    text-align: center;
+    margin: auto;
+}
+
+
+.main {
+    flex-grow: 3;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.kaban {
+    height: 600px;
+    width: 400px;
+    background-color: var(--card_kanban);
+    border-radius: 27px;
+    display: flex;
+    flex-direction: column;
+    border: var(--header) solid 2px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.361);
+}
+
+.kaban h2 {
+    font-size: 32px;
+    text-align: center;
+    background-color: var(--header);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.kaban .lista_tarefas {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.lista_tarefas span {
+    font-size: 24px;
+    text-align: center;
+    border: 0.5px rgba(161, 161, 161, 0.637) solid;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: var(--header);
+}
