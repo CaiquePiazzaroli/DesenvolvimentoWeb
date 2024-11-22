@@ -7,6 +7,7 @@
     /* Colors */
     --branco-fonte: #ffff;
     --preto-transparente: #00000052;
+    --preto-fosco: #000000;
     --azul-claro-botao:#5ab2ff;
 }
 
@@ -16,7 +17,8 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-    font: var(--fonte-principal);
+    font-family: var(--fonte-principal);
+    color: var(--branco-fonte);
 }
 
 .button {
