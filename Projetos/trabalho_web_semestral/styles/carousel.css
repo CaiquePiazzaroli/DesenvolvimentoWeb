@@ -1,0 +1,42 @@
+.carousel {
+    display: flex;
+    /* Permite scrollar no eixo x */
+    overflow-x:scroll;
+    /* Obriga o usuário a scrolar 100% */
+    scroll-snap-type: x mandatory;
+    position: relative;
+}
+
+.carousel > li {
+    flex-shrink: 0;
+    /* Mantem o usuário sempre no centro da imagem */
+    scroll-snap-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.carousel > li > img{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 100vw;
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel_button_left {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.carousel_button_right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.carousel_button_right > img, .carousel_button_left > img {
+    width: 24px;
+}

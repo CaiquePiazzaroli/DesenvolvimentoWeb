@@ -6,32 +6,49 @@
         <title>Resort</title>
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/carousel.css">
     </head>
     <body>
         <header class="header">
-            <div class="container_nav">
-                <div class="container_nav_menu">
-                    <a><img src="assets/menu_icon.png" alt="menuicon"></a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Quartos</a></li>
-                        <li><a href="index.html">Sobre</a></li>
-                        <li><a href="index.html">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="container_nav_logo">
+            <div class="container1">    
+                <div class="container_nav">
+                    <div class="container_nav_social">
+                        <ul>
+                            <li><img scr="instagram" alt="logo instagram"></li>
+                            <li><img scr="twitter" alt="logo twitter"></li>
+                            <li><img scr="facebook" alt="logo facebook"></li>
+                        </ul>
+                        <a href="#">Alugar</a>
+                    </div>
                     <img src="assets/lumin_logo.png" alt="Logo Principal">
+                    <a><img src="assets/menu_icon.png" alt="menuicon"></a>
                 </div>
-                <div class="container_nav_social">
-                    <ul>
-                        <li><img scr="instagram" alt="logo instagram"></li>
-                        <li><img scr="twitter" alt="logo twitter"></li>
-                        <li><img scr="facebook" alt="logo facebook"></li>
-                    </ul>
-                    <a href="#">Alugar</a>
-                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Quartos</a></li>
+                    <li><a href="index.html">Sobre</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="carousel-container">
+                <ul class="carousel">
+                    <li>
+                        <img src="assets/resort1.jpg" alt="resort">
+                    </li>
+                    <li>
+                        <img src="assets/resort2.jpg" alt="resort">
+                    </li>
+                    <li>
+                        <img src="assets/resort1.jpg" alt="resort">
+                    </li>
+                </ul>
+                <a class="carousel_button_left"><img src="assets/seta-esquerda.png" alt="seta para esquerda"></a>
+                <a class="carousel_button_right"><img src="assets/seta-direita.png" alt="seta para direita"></a>
             </div>
         </header>
     </body>
     <script src="scripts/header.js"></script>
+    <script src="scripts/carrousel.js"></script>
 </html>
+

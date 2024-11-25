@@ -1,16 +1,19 @@
-let menuIcon = document.querySelector(".container_nav_menu > a");
-let menubar = document.querySelector(".container_nav_menu > ul");
-let containerNav = document.querySelector(".container_nav");
+let menuIcon = document.querySelector(".container_nav > a");
+let menubar = document.querySelector(".container1 > ul");
+let containerNav = document.querySelector(".container1");
+let imgMenuIcon =  document.querySelector(".container_nav > a > img");
+
+
 
 menuIcon.addEventListener("click", () => {
     if(menubar.style.display ===""){
-        menubar.style.display="block";
-        containerNav.classList.add("background_black");
-        menubar.classList.add("background_black");
+        menubar.style.display="flex";
+        containerNav.classList.add("menu_opened");
+        imgMenuIcon.src = "assets/close_menu_icon.png";
 
-    } else {    
+    } else { 
         menubar.style.display="";
-        containerNav.classList.remove("background_black");
-        menubar.classList.remove("background_black");
+        containerNav.classList.remove("menu_opened");
+        imgMenuIcon.src = "assets/menu_icon.png";
     }
 })
