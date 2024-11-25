@@ -1,23 +1,27 @@
-// let buttonCarousel = document.querySelectorAll(".carousel > li > *");
-// let itemCarousel = document.querySelector(".carousel > li");
 
-// let backgrounds = ["resort1.jpg", "resort2.jpg"]
-// let backgroundNumber = 0;
+let buttonLeft = document.querySelector(".carousel_button_left");
+let buttonRight = document.querySelector(".carousel_button_right");
+let carousel = document.querySelector(".carousel");
+let itensCarousel = document.querySelectorAll(".carousel > li");
 
-// buttonCarousel.forEach(
-//     (x) => {
-//         x.addEventListener("click", () => {
-//             if(x.innerHTML ==="esquerda") {
-//                 console.log("esquerda!");
-//                 console.log(itemCarousel.style.backgroundImage = `url(assets/${backgrounds[backgroundNumber + 1]})`);
-//                 itemCarousel.style.backgroundImage = `url(assets/${backgrounds[backgroundNumber + 1]})`;
-//                 backgroundNumber++;
-//             } else{
-//                 console.log("direita!");
-//                 itemCarousel.style.backgroundImage = `url(assets/${backgrounds[backgroundNumber - 1]})`;
-//                 console.log(itemCarousel.style.backgroundImage = `url(assets/${backgrounds[backgroundNumber + 1]})`);
-//                 backgroundNumber--;
-//             }
-//         })
-//     }
-// )
+let positionCarousel = 1;
+
+let rolarEsquerda = () => {
+    if(positionCarousel == itensCarousel.length) {
+        carousel.scroll(0,0);
+        positionCarousel= 1;
+    } else {
+        carousel.scrollBy({
+        top: 0,
+        left: 1,
+        behavior: "smooth",
+        });
+        positionCarousel++; 
+    }
+}
+
+let timer = window.setInterval(() => {
+    console.log(itensCarousel.length)
+    rolarEsquerda();
+}, 5000)
+
