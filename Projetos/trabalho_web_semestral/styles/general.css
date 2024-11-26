@@ -6,9 +6,10 @@
 
     /* Colors */
     --branco-fonte: #ffff;
+    --branco-transparente: #ffffff25;
     --preto-transparente: #00000052;
     --preto-fosco: #000000;
-    --azul-claro-botao:#5ab2ff;
+    --azul-claro-botao:#6ebbff;
 }
 
 * {

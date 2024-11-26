@@ -1,6 +1,5 @@
 .header {
-    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/resort1.jpg'); */
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -9,9 +8,7 @@
 
 .container1 {
     position:absolute;
-
-    /* Posiciona o menu superior a frente da imagem de fundo */
-    z-index: 1;
+    z-index: 2; /* Posiciona o menu superior a frente da imagem de fundo */
 }
 
 .container_nav {
@@ -20,7 +17,6 @@
     align-items: center;
     width: 100vw;
     padding: 12px;
-    
 }
 
 .container_nav > a > img{
@@ -44,6 +40,7 @@
 .menu_opened {
     background-color: var(--preto-fosco);
     transition: 0.5s;
+    height: 100vh;
 }
 
 /* .container_nav_menu {
