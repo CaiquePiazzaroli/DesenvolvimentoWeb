@@ -27,15 +27,24 @@
     filter: brightness(50%); /* Deixa o background escuro para aumentar o contraste como título */
 }
 
-.carousel > li > h2 {
+.carousel-item-description {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     top: 40%;
     width: 100vw;
-    font-size: 2em;
-    margin: auto;
-    font-weight: 300;
     z-index: 1;
+    margin: 0 32px 0 32px;
+    gap: 24px;
+}
+
+.carousel-item-description > h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+.carousel-item-description > p {
+    font-size: 1rem;
 }
 
 .carousel_button_left, .carousel_button_right {
@@ -46,6 +55,7 @@
     border-radius: 50px;
     display: flex;
     margin: auto;
+    z-index: 2;
 }
 
 .carousel_button_left:hover, .carousel_button_right:hover {
@@ -66,3 +76,11 @@
     width: 12px;
 }
 
+@media only screen and (min-width: 600px) {
+    .carousel-item-description > h2 {
+    font-size: 6rem;
+    }
+    .carousel-item-description > p {
+    font-size: 2rem;
+    }
+}
