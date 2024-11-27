@@ -25,3 +25,8 @@
 .button {
     background-color: var(--azul-claro-botao);
 }
+
+
+body {
+    height: 10000px;
+}

@@ -8,7 +8,14 @@
 
 .container1 {
     position:absolute;
-    z-index: 2; /* Posiciona o menu superior a frente da imagem de fundo */
+    z-index: 3; /* Posiciona o menu superior a frente da imagem de fundo */
+}
+
+.container1RollDown {
+    position: fixed;
+    background-color: var(--preto-fosco);
+    top:0;
+    transition: 1s;
 }
 
 .container_nav {

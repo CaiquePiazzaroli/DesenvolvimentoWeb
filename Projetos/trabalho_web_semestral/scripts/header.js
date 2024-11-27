@@ -17,3 +17,12 @@ menuIcon.addEventListener("click", () => {
         imgMenuIcon.src = "assets/menu_icon.png";
     }
 })
+
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 100){
+        containerNav.classList.add("container1RollDown");
+    } else {
+        containerNav.classList.remove("container1RollDown");
+    }
+ })
