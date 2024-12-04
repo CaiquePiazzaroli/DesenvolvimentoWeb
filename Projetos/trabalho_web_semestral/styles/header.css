@@ -6,7 +6,7 @@
     height: 100vh;
 }
 
-.container1 {
+.container_nav {
     position:absolute;
     z-index: 3; /* Posiciona o menu superior a frente da imagem de fundo */
 }
@@ -30,7 +30,7 @@
     width: 48px;
 }
 
-.container_nav > img {
+#logo_principal {
     width: 120px;
 }
 
@@ -62,6 +62,19 @@
     display: none;
 }
 
-.container_nav_social > ul {
-    display: none;
+
+
+@media only screen and (min-width: 600px) {
+    .container_nav {
+        flex-direction: row-reverse;
+    }
+
+    .container_nav_menu > a {
+        display: none;
+    }
+
+    .container_nav_menu > ul {
+        display: flex;
+        gap: 24px;
+    }
 }
