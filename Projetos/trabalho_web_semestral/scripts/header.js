@@ -1,28 +1,23 @@
-let menuIcon = document.querySelector(".container_nav > a");
-let menubar = document.querySelector(".container1 > ul");
-let containerNav = document.querySelector(".container1");
-let imgMenuIcon =  document.querySelector(".container_nav > a > img");
+const menuNavList = document.getElementById("menu-nav-list");
+const buttonMenu = document.getElementById("button-menu");
+const nav = document.querySelector(".nav");
 
-
-
-menuIcon.addEventListener("click", () => {
-    if(menubar.style.display ===""){
-        menubar.style.display="flex";
-        containerNav.classList.add("menu_opened");
-        imgMenuIcon.src = "assets/close_menu_icon.png";
-
-    } else { 
-        menubar.style.display="";
-        containerNav.classList.remove("menu_opened");
-        imgMenuIcon.src = "assets/menu_icon.png";
+buttonMenu.addEventListener("click", () => {
+    if(menuNavList.style.display==""){
+        menuNavList.style.display="flex";
+        nav.classList.add("nav-enabled");
+        console.log(menuNavList.style.display)
+    } else {
+        menuNavList.style.display="";
+        nav.classList.remove("nav-enabled");
     }
 })
 
 
 window.addEventListener("scroll", () => {
     if(window.scrollY > 100){
-        containerNav.classList.add("container1RollDown");
+        nav.classList.add("nav-Roll-Down");
     } else {
-        containerNav.classList.remove("container1RollDown");
+        nav.classList.remove("nav-Roll-Down");
     }
  })
