@@ -66,21 +66,34 @@
 
 .carousel_button_left{
     left: 10px;
+    display: none;
 }
 
 .carousel_button_right {
     right: 10px;
+    display: none;
 }
 
 .carousel_button_right > img, .carousel_button_left > img {
     width: 12px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1380px) {
     .carousel-item-description > h2 {
-    font-size: 6rem;
+        font-weight: 400;
+        font-size: 6rem;
     }
     .carousel-item-description > p {
     font-size: 2rem;
     }
+
+    .carousel_button_left{
+    left: 10px;
+    display: block;
+}
+
+.carousel_button_right {
+    right: 10px;
+    display: block;
+}
 }

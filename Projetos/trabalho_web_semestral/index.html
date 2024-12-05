@@ -6,6 +6,7 @@
         <title>Resort</title>
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/navbar.css">
         <link rel="stylesheet" href="styles/carousel.css">
     </head>
     <body>
@@ -14,14 +15,25 @@
                 <div class="nav-visible">
                     <a id="button-menu"><img src="assets/menu_icon.png" alt="icone de menu"></a>
                     <img id="logo-icon" src="assets/lumin_logo.png" alt="logo">
+                    <div class="social">
+                        <ul id="social-list">
+                            <li class="social-list-icon"><a href="#"><img src="assets/insta-icon.png" alt="icone instagram"></a></li>
+                            <li class="social-list-icon"><a href="#"><img src="assets/face-icon.png" alt="icone fecebook"></a></li>
+                            <li class="social-list-icon"><a href="#"><img src="assets/twitter-icon.png" alt="icone twitter-icon"></a></li>
+                        </ul>
+                        <a class="button" href="#">Book a room</a>
+                    </div>
+                    
                 </div>
                 <div id="nav-invisible">
-                    <ul id="menu-nav-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Rooms</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul id="menu-nav-list" class="menu-nav-list">
+                        <li>
+                            <a href="#">Home</a><div class="bottom-bar"></div>
+                        </li>
+                        <li><a href="#">Rooms</a><div class="bottom-bar"></div></li>
+                        <li><a href="#">About</a><div class="bottom-bar"></div></li>
+                        <li><a href="#">Blog</a><div class="bottom-bar"></div></li>
+                        <li><a href="#">Contact</a><div class="bottom-bar"></div></li>
                     </ul>
                 </div>
             </nav>

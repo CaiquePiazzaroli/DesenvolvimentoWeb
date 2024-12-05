@@ -9,7 +9,7 @@
     --branco-transparente: #ffffff25;
     --preto-transparente: #00000052;
     --preto-fosco: #000000;
-    --azul-claro-botao:#6ebbff;
+    --azul-claro-botao:#2f9eff;
 }
 
 * {
@@ -24,6 +24,15 @@
 
 .button {
     background-color: var(--azul-claro-botao);
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid var(--azul-claro-botao);
+}
+
+.button:hover {
+    background-color: var(--branco-fonte);
+    color: var(--azul-claro-botao);
+    border: 2px solid var(--azul-claro-botao);
 }
 
 body {

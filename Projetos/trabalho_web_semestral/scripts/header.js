@@ -1,14 +1,24 @@
+const menuNavListItens = document.querySelectorAll(".menu-nav-list > li");
+const bottomBar = document.querySelector(".bottom-bar");
 const menuNavList = document.getElementById("menu-nav-list");
 const buttonMenu = document.getElementById("button-menu");
 const nav = document.querySelector(".nav");
 
+menuNavListItens.forEach((li) => {
+    li.addEventListener("mouseover", () => {
+        li.children[1].classList.toggle("bottom-bar-activated");
+    })
+    li.addEventListener("mouseout", () => {
+         li.children[1].classList.toggle("bottom-bar-activated");
+    })
+})
+
 buttonMenu.addEventListener("click", () => {
-    if(menuNavList.style.display==""){
-        menuNavList.style.display="flex";
+    if(!menuNavList.classList.contains("menu-nav-list-activated")){
+        menuNavList.classList.add("menu-nav-list-activated");
         nav.classList.add("nav-enabled");
-        console.log(menuNavList.style.display)
     } else {
-        menuNavList.style.display="";
+        menuNavList.classList.remove("menu-nav-list-activated");
         nav.classList.remove("nav-enabled");
     }
 })
