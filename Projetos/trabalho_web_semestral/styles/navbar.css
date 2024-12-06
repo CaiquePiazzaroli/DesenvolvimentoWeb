@@ -55,6 +55,11 @@
     align-items: center;
     gap: 16px;
     padding: 8px;
+    list-style-type: none;
+}
+
+.menu-nav-list > li > a {
+    color: var(--branco-fonte);
 }
 
 .bottom-bar{
@@ -80,7 +85,7 @@
     padding: 8px;
 }
 
-@media only screen and (min-width: 1380px){
+@media only screen and (min-width: 1336px){
 
     #button-menu { 
         display: none;
