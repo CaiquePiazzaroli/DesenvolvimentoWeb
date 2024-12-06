@@ -27,6 +27,7 @@
     font-size: 16px;
     border: 2px solid var(--azul-claro-botao);
     font-weight: 400;
+    color: var(--branco-fonte);
 }
 
 .button:hover {
