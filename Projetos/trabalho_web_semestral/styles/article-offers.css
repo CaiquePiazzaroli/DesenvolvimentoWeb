@@ -1,3 +1,7 @@
+.article-offers {
+   padding-bottom: 40px;
+}
+
 .container-offers {
     padding: 0 15px 0 15px;
 }
@@ -95,5 +99,10 @@
 
     .offer {
         width: 324px;
+    }
+
+    .offer-container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

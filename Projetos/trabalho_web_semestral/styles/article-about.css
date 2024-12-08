@@ -1,5 +1,5 @@
 .article-about {
-    padding: 40px 0 40px 0;  
+    padding: 40px 0 40px 0;
 }
 
 .container-about {
@@ -7,17 +7,27 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .row-about {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    gap:128px;
+    width: 100%;
+}
+
+.text-area {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 1px;
+    position: relative;
+    width: 100%;
 }
 
 .text-info {
-    
+    line-height: 24px;
+    text-align: left;
 }
 
 .text-info-title {
@@ -47,7 +57,7 @@
     color: var(--preto-transparente);
     line-height: 28px;
     font-weight: 300;
-    max-width: 300px;
+    max-width: 100%;
 }
 
 .text-info-button::before {
@@ -70,63 +80,92 @@
     color: var(--branco-transparente);
 }
 
+
+.image-area {
+    line-height: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 100%;
+    text-size-adjust: 100%;
+}
+
 .image-container {
     flex-grow: 1;
     display: flex;
-    height: 271px;
-    width: 100%;
     justify-content: center;
+    text-align: left;
+    justify-content: flex-end;
 }
 
-.img-1, .img-2 {
-    width: 164px;
-    height: 231px;
-    object-fit: cover;
+.container-img1, .container-img2 {
+    width: 50%;
 }
 
 .container-img2 {
     margin: 40px 0 0 10px;
 }
 
+.img-1 {
+    height: 80%;
+    object-fit: cover;
+}
+
+.img-1, .img-2 {
+    width: 100%;
+}
+
+
+@media only screen and (min-width:576px){
+    .container-about {
+        max-width: 540px;
+    }
+
+}
+
+
 @media only screen and (min-width:768px) {
     
-    .article-about {
-        padding: 80px 0 80px 0;
-    }
-
     .container-about {
-        max-width: 1140px;
-        height: 440px;
+        max-width: 720px;
     }
 
-    .row-about {
-        height: 100%;
-        flex-direction: row;
+    .text-info-title > h2 {
+        font-size: 36px;
     }
-
-    .image-container {
-        height: 100%;
-    }
-
-    .container-img1, .container-img2 {
-        height: 100%;
-        width: 280px;
-    }
-
     
-
-    .img-1, .img-2 {
-        height: 100%;
-        width: 100%;
-    }   
 
    
 }
 
-@media only screen and (min-width:1200px) {
-    
+@media only screen and (min-width:992px) {
+
     .article-about {
-        padding: 200px 0 100px 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
+    .text-info-title > h2 {
+        font-size: 46px;
+    }
+    
+    .container-about {
+        max-width: 960px;
+    } 
+
+    .text-area {
+        max-width: 50%;
+    }
+
+    .image-area {
+        max-width: 50%;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+
+    .container-about {
+        max-width: 1140px;
+    } 
 }

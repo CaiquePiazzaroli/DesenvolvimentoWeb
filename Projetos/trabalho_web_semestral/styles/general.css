@@ -5,6 +5,7 @@
     --fonte-principal: "Raleway", sans-serif;
 
     /* Colors */
+    --transparente: rgba(255, 255, 255, 0);
     --branco-fonte: #ffff;
     --branco-transparente: rgb(145, 145, 145);
     --preto-transparente: rgb(77,77,77);
