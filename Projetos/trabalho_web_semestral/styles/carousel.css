@@ -1,5 +1,5 @@
 .carousel-container {
-    height: 100%;
+    height: 100vh;
 }
 
 ::-webkit-scrollbar { /* Remove a barra de rolagem do carrosel */
@@ -40,7 +40,7 @@
     gap: 24px;
 }
 
-.carousel-item-description > h2 {
+.carousel-item-description > h1 {
     font-size: 2rem;
     font-weight: 200;
 }
@@ -80,7 +80,7 @@
 }
 
 @media only screen and (min-width: 1380px) {
-    .carousel-item-description > h2 {
+    .carousel-item-description > h1 {
         font-weight: 400;
         font-size: 6rem;
     }
