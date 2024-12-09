@@ -55,6 +55,14 @@
     color: var(--branco-fonte);
 }
 
+.titles{ 
+    color: var(--branco-fonte);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+}
+
 
 
 body {
