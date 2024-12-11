@@ -1,9 +1,20 @@
+.carousel-container-small {
+    height: 400px;
+    
+}
+
 .carousel-container {
     height: 100vh;
+    position: relative;
 }
 
 ::-webkit-scrollbar { /* Remove a barra de rolagem do carrosel */
     display: none;
+}
+
+.carousel-short-size{
+    width: 80vw;
+    justify-content: center;
 }
 
 .carousel {
@@ -13,6 +24,7 @@
     position: relative;
     height: 100%;
     color: var(--branco-fonte);
+    margin: auto;
 }
 
 .carousel > li {
@@ -77,6 +89,21 @@
 
 .carousel_button_right > img, .carousel_button_left > img {
     width: 12px;
+}
+
+@media only screen and (min-width:576px){
+    .carousel-container-small {
+        height: 500px;
+    }
+
+}
+
+
+@media only screen and (min-width:768px) {
+    .carousel-container-small {
+        height: 750px;
+    }
+   
 }
 
 @media only screen and (min-width: 1380px) {
