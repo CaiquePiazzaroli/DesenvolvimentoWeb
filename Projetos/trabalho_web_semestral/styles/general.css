@@ -1,17 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+.light{
+    /* Fonts */
+    --fonte-principal: "Raleway", sans-serif;
+
+    /* Colors */
+    --transparente: rgba(255, 255, 255, 0);
+
+    /* Nav e button nav */
+    --cor-fonte-nav: rgb(255, 255, 255);
+    --cor-fonte-button-nav:rgb(255,255,255);
+    --cor-background-button-nav: rgb(0,157,255);
+    --cor-background-button-nav-hover: rgb(255,255,255);
+
+    /* Carrousel */
+    --color-font-carousel: rgb(255, 255, 255);
+
+    /* About */
+    --font-top-span-about-color:rgb(0,157,255);
+    --font-title-about-color: rgb(31,31,31);
+    --font-desc-about-color:rgb(145, 145, 145);
+    --font-btn-about-color:rgb(77,77,77);
+    --font-btn-about-color-hover: rgb(0,157,255);
+
+    /* Offers */
+    --font-top-span-offer-color:rgb(0,157,255);
+    --font-title-offer-color: rgb(31,31,31);
+    --font-title-offer-container-color: rgb(31,31,31);
+    --font-li-offer-ul-color: rgb(145, 145, 145);
+    --font-btn-offer:rgb(0,157,255);
+    --font-btn-offer-hover:rgb(255, 255, 255);
+    --border-btn-offer-color:rgb(0,157,255);
+    --background-btn-offer:rgb(255, 255, 255);
+    --background-btn-offer-hover:rgb(0,157,255);
+    
+    --branco-transparente: rgb(145, 145, 145);
+    --branco-borda: #e5e6e9;
+    --preto-transparente: rgb(77,77,77);
+    --preto-fosco: rgb(31,31,31);
+    --azul-claro-botao:rgb(0,157,255);
+}
+
+.dark{
     /* Fonts */
     --fonte-principal: "Raleway", sans-serif;
 
     /* Colors */
     --transparente: rgba(255, 255, 255, 0);
     --branco-fonte: #ffff;
-    --branco-transparente: rgb(145, 145, 145);
-    --preto-transparente: rgb(77,77,77);
+
+    --branco-transparente: rgb(255, 255, 255);
+    --branco-borda: #e5e6e9;
+    --preto-transparente: rgb(255, 255, 255);
     --preto-fosco: rgb(31,31,31);
     --azul-claro-botao:rgb(0,157,255);
+    --azul-claro-botao-white:rgb(0,157,255);
+
+    background-color: var(--preto-fosco);
 }
+
+
 
 * {
     margin: 0;
@@ -28,31 +76,31 @@
     font-size: 16px;
     border: 2px solid var(--azul-claro-botao);
     font-weight: 400;
-    color: var(--branco-fonte);
+    color: var(--cor-fonte-button-nav);
 }
 
 .button:hover {
-    background-color: var(--branco-fonte);
+    background-color: var(--cor-background-button-nav-hover);
     color: var(--azul-claro-botao);
     border: 2px solid var(--azul-claro-botao);
 }
 
 .button-white {
     display: inline-block;
-    background-color: var(--branco-fonte);
-    color: var(--azul-claro-botao);
-    border: 2px solid var(--azul-claro-botao);
+    background-color: var(--background-btn-offer);
+    color: var(--font-btn-offer);
+    border: 2px solid var(--border-btn-offer-color);
     padding: 16px;
     font-size: 16px;
     font-weight: 400;
 }
 
 .button-white:hover {
-    background-color: var(--azul-claro-botao);
+    background-color: var(--background-btn-offer-hover);
     padding: 16px;
     font-size: 16px;
     border: 2px solid var(--azul-claro-botao);
-    color: var(--branco-fonte);
+    color: var(--font-btn-offer-hover);
 }
 
 .titles{ 
@@ -61,10 +109,4 @@
     font-weight: 400;
     line-height: 72px;
     text-align: center;
-}
-
-
-
-body {
-    height: 10000px;
 }

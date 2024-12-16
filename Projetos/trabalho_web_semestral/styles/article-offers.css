@@ -8,20 +8,21 @@
 
 .offers-group-title {
     margin-bottom: 40px;
+     
 }
 
 .offers-group-title > span {
     display: block;
     margin-bottom: 15px;
     font-size: 14px;
-    color: var(--azul-claro-botao);
+    color: var( --font-top-span-offer-color);
     text-align: center;
 }
 
 .offers-group-title > h2 {
     margin-bottom: 8px;
     font-size: 30px;
-    color: var(--preto-fosco);
+    color: var(--font-title-offer-color);
     font-weight: 400;
     text-size-adjust: 100%;
     text-align: left;
@@ -55,11 +56,13 @@
     margin-bottom: 8px;
     font-size: 22px;
     font-weight: 400;
+    color: var(--font-title-offer-container-color);
 }
 
 .offer-container > ul > li {
     position: relative;
     padding-left: 23px;
+    color: var(--font-li-offer-ul-color);
 }
 
 .offer-container > ul >li::before {

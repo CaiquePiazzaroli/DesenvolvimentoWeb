@@ -10,6 +10,7 @@
 .feature-text-margin {
      margin-bottom: 40px;
      text-align: center;
+     
 }
 
 .feature-text-margin > span {
@@ -26,6 +27,7 @@
     font-weight: 400;
     line-height: 36px;
     font-size: 30px;
+    color: var(--branco-fonte);
 }
 
 .rooms {
@@ -96,12 +98,13 @@
 @media only screen and (min-width:768px) {
 
     .rooms {
-       
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .single-room {
-        width: 50%;
-        float: left;
+        min-width: 50%;
+        max-width: 50%;
         margin: 0;
     }
 }

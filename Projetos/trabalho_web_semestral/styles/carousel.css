@@ -8,10 +8,6 @@
     position: relative;
 }
 
-::-webkit-scrollbar { /* Remove a barra de rolagem do carrosel */
-    display: none;
-}
-
 .carousel-short-size{
     width: 80vw;
     justify-content: center;
@@ -19,23 +15,31 @@
 
 .carousel {
     display: flex;
-    overflow-x: scroll; /* Permite scrollar no eixo x */
+    overflow-x: auto; /* Permite scrollar no eixo x */
+    -ms-overflow-style: none; /* Oculta scrollbar no IE e Edge */
+    scrollbar-width: none;
     scroll-snap-type: x mandatory;/* Obriga o usuário a scrolar 100% */
     position: relative;
     height: 100%;
-    color: var(--branco-fonte);
+    color: var( --color-font-carousel);
     margin: auto;
 }
 
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
 .carousel > li {
+    
+    width: 100vw;
     flex-shrink: 0;
     scroll-snap-align: center; /* Mantem o usuário sempre no centro da imagem */
     display: flex;
 }
 
-
 .carousel > li > img{
-    width: 100vw;
+    width: 100%;
+    overflow: hidden;
     object-fit: cover; /* ajusta a imagem para nao deixar esticada */
     filter: brightness(50%); /* Deixa o background escuro para aumentar o contraste como título */
 }

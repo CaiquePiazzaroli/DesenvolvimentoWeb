@@ -59,7 +59,7 @@
 }
 
 .menu-nav-list > li > a {
-    color: var(--branco-fonte);
+    color: var(--cor-fonte-nav);
 }
 
 .bottom-bar{
@@ -94,7 +94,7 @@
     #logo-icon {
         position: absolute;
         left: 46%;
-        top: 16px;
+        top: 24px;
     }
 
     .nav {

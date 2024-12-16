@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="../styles/article-offers.css">
         <link rel="stylesheet" href="../styles/article-video.css">
         <link rel="stylesheet" href="../styles/article-feature-rooms.css">
-        <link rel="stylesheet" href="../styles/blog.css">
+        <link rel="stylesheet" href="../styles/contact.css">
         <link rel="stylesheet" href="../styles/footer.css">
     </head>
     <body>
@@ -31,7 +31,6 @@
                             </ul>
                             <a class="button" href="#">Reserve um quarto</a>
                         </div>
-                        
                     </div>
                     <div id="nav-invisible">
                         <ul id="menu-nav-list" class="menu-nav-list">
@@ -47,16 +46,34 @@
                 </nav>
         </header>
 
-        <!-- Main - conteudo principal do documento -->
+        <!-- Main - Conteúdo principal do documento -->
         <main class="main">
+
             <article class="presentation">
                 <div class="presentation-container">
-                    <h1 class="titles">Blog</h1>
+                    <h1 class="titles">Contato</h1>
                 </div>
             </article>
+
+            <div class="form-section">
+                <div class="form-section-container">
+                    <h2 class="form-section-container-title">Preencha seus dados</h2>
+                    <form class="form"  method="POST" action="https://formsubmit.co/caique405@gmail.com">
+                        <textarea type="text" name="Nome" placeholder="Nome completo" required></textarea>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="telefone" placeholder="telefone" maxLength="11"required>
+                        <input type="text" name="cep" placeholder="cep" id="cep" 
+                        value="" maxlength="9" onblur="pesquisacep(this.value)" required>
+                        <input type="text" name="cidade" placeholder="cidade" id="cidade" required>
+                        <input type="text" name="bairro" placeholder="bairro" id="bairro" required>
+                        <input type="text" name="logradouro" id="rua" placeholder="logradouro" required>
+                        <button type="submit" value="Enviar" class="button">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </main>
 
-        <!-- Rodapé da página -->
+        <!-- Rodapé do documento - footer -->
         <footer class="footer">
             <div class="footer-container">
                 <div class="adress">
@@ -68,7 +85,7 @@
                 <div class="adress">
                     <h2 class="footer-title">Reservas</h2>
                     <address class="footer-adress">
-                        <a class="reservation-button" href="mailto:lumin@luminresort.com.br">lumin@luminresort.com.br</a><br />
+                        <a class="reservation-button" href="mailto:lumin@luminresort.com.br">lumin@luminresort.com.br</a><br/>
                         <a class="reservation-button" href="tel:+5511975361234">+55 (11) 97536‑1234</a>
                     </address>
                 </div>
@@ -94,7 +111,7 @@
                     </div>
                     <p id="newsletter-description">Inscreva-se para receber atualizações!</p>
                 </div>
-        
+                
             </div>
             <div class="rights">
                 <p>Todos direitos reservados, este site foi construido com base no modelo <a
@@ -103,9 +120,9 @@
         </footer>
     </body>
 
-    <!-- Scripts -->
+    <!-- Scripts do documento -->
     <script src="../scripts/header.js"></script>
-    <script src="../scripts/carousel.js"></script>
-    <script src="../scripts/roomsFeature.js"></script>
+    <script src="../scripts/ViaCepApi.js"></script>
+
 </html>
 

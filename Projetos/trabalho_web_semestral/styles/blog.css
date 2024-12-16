@@ -17,9 +17,9 @@
 
 .presentation {
     height: 60vh;
-    background-image: url("../assets/resort6.jpg");
+    background-image: url("../assets/resort13offer.jpg");
     background-size:cover;
-    background-position: center;
+    background-position: center bottom;
     position: relative;
 }
 
@@ -53,7 +53,6 @@
     margin-top: 0px;
     text-align: "left";
     text-size-adjust: 100%;
-
 }
 
 .single-about-info > p {

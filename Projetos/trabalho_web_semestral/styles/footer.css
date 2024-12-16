@@ -1,0 +1,113 @@
+.footer {
+    background-color: var(--preto-fosco);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-container {
+    color: var(--branco-fonte);
+    padding: 40px 20px 40px 20px;
+    width: 100vw;
+    display: flex;
+    justify-content:baseline;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.adress {
+    flex-grow: 1;
+    width: 100vw;
+}
+
+.footer-adress {
+    margin-bottom: 20px;
+    color: var(--branco-transparente);
+}
+
+.reservation-button {
+    color: var(--branco-transparente);
+    text-decoration: underline;
+}
+
+#nav-footer {
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    color: var(--branco-transparente);
+    line-height: 32px;
+}
+
+.newsletter {
+    display: flex;
+    max-width: 375px;
+    margin-bottom: 20px;
+}
+
+.newsletter > .button {
+
+}
+
+.newsletter > #email {
+    flex-grow: 1;
+    padding-left: 12px;
+}
+
+#newsletter-description {
+    margin-bottom: 60px;
+    color: var(--branco-transparente);
+}
+
+.rights {
+    padding-top: 20px;
+    border-top: 1px solid var(--branco-transparente);
+    font-size: 14px;
+    text-align: center;
+    color: var(--branco-transparente);
+    padding-bottom: 24px;
+}
+
+
+.rights > p > a {
+    color: var(--azul-claro-botao);
+}
+
+@media only screen and (min-width:768px) {
+    .footer-container {
+        max-width: 80vw;
+    }
+
+    .adress {
+        width: 50%; 
+    }
+}   
+
+
+@media only screen and (min-width:1000px) {
+    .footer-container {
+        max-width: 70vw;
+    }
+
+    .adress {
+        width:40%;
+    }
+
+}   
+
+@media only screen and (min-width:1200px) {
+    .footer-container {
+        max-width: 60vw;
+    }
+
+    .adress {
+        width:25%;
+    }
+
+}   
