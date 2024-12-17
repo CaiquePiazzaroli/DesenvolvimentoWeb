@@ -5,7 +5,7 @@
 
 .presentation-container {
     content: "";
-    background: linear-gradient(var(--preto-fosco),var(--transparente) 90%);
+    background: linear-gradient(var(--background-fade-color),var(--background-fade-color-transparent) 90%);
     display: block;
     height: 100%;
     display: flex;
@@ -13,6 +13,7 @@
 
 .presentation-container > h1 {
     margin: auto;
+    color: var(--font-color-title);
 }
 
 .presentation {
@@ -53,6 +54,7 @@
     margin-top: 0px;
     text-align: "left";
     text-size-adjust: 100%;
+    color: var(--font-color-title-about);
 
 }
 
@@ -60,7 +62,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 38px;
-    color: var(--branco-transparente);
+    color: var(--font-color-p-about);
 }
 
 @media only screen and (min-width:768px){

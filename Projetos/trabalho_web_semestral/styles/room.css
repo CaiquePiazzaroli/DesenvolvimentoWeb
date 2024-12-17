@@ -5,7 +5,7 @@
 
 .presentation-container {
     content: "";
-    background: linear-gradient(var(--preto-fosco),var(--transparente) 90%);
+    background: linear-gradient(var(--background-fade-color), var(--background-fade-color-transparent) 90%);
     display: block;
     height: 100%;
     display: flex;
@@ -13,6 +13,7 @@
 
 .presentation-container > h1 {
     margin: auto;
+    color: var(--font-color-title);
 }
 
 .presentation {

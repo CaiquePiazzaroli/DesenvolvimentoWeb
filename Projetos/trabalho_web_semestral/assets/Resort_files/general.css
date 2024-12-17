@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-:root {
+.light {
+    transition: 1s;
     /* Fonts */
     --fonte-principal: "Raleway", sans-serif;
 
@@ -57,29 +57,19 @@
     --background-button-color-phone-hover: rgb(255, 255, 255);
     --button-margin-color-phone: rgb(0, 157, 255);
 
-    /* Pages: room, contact, about, blog */
-    --background-fade-color:rgb(31, 31, 31);
-    --background-fade-color-transparent:rgba(255, 255, 255, 0);
-    --font-color-title: rgb(255, 255, 255);
-
-    /* About page */
-    --font-color-title-about: rgb(31, 31, 31);
-    --font-color-p-about: rgb(145, 145, 145);
-
-    /* form */ 
-    --font-title-form-color:rgb(31, 31, 31);
-    --form-input-border-color:rgb(0, 157, 255);;
-
     /* Footer */
     --background-color-footer: rgb(31, 31, 31);
     --font-color-footer: rgb(255, 255, 255);
     --font-color-sub-itens: rgb(145, 145, 145);
 
-    
+    /* Pages: room, contact, about, blog */
+    --background-fade-color:rgb(31, 31, 31);
+    --background-fade-color-transparent:rgba(255, 255, 255, 0);
+    --font-color-title: rgb(255, 255, 255);
 }
 
-.dark{
-
+.dark {
+    transition: 1s;
     background-color: rgb(0, 0, 0);
 
     /* Fonts */
@@ -137,20 +127,13 @@
     --background-button-color-phone-hover: rgb(255, 255, 255);
     --button-margin-color-phone: rgb(0, 157, 255);
 
-     /* form */ 
-     --font-title-form-color:rgb(0, 157, 255);
-     --form-input-border-color:rgb(0, 157, 255);
-
-     /* About page */
-    --font-color-title-about: rgb(0, 157, 255);
-    --font-color-p-about: rgb(255, 255, 255);
-
     /* Footer */
     --background-color-footer: rgb(0, 0, 0);
     --font-color-footer: rgb(255, 255, 255);
     --font-color-sub-itens: rgb(145, 145, 145);
 
 }
+
 
 
 * {
