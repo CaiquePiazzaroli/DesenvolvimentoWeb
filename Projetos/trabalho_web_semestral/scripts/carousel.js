@@ -26,18 +26,3 @@ buttonLeft.addEventListener("click", () => {
 buttonRight.addEventListener("click", () => {
     switchToLeft();
 })
-
-// let switchCount = 0;
-// window.setInterval(() => {
-//     if(switchCount != carousel.children.length) {
-//         switchToLeft(); 
-//     } else {
-//         carousel.scroll({
-//             top: 0,
-//             left: 0,
-//             behavior: "smooth",
-//         })
-//         switchCount = 0;
-//     } 
-//     switchCount++;
-// }, 8000)

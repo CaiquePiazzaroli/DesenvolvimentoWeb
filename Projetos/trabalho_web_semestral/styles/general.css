@@ -72,6 +72,10 @@
 
     /* Blog */
     --background-color-card: #fff;
+    --background-color-aside-item: rgb(251, 249, 255);
+    --text-title-h3-item: rgb(31, 31, 31);
+    --text-p-item: rgb(31, 31, 31);
+    --text-footer-item:rgb(145, 145, 145);
 
     /* Footer */
     --background-color-footer: rgb(31, 31, 31);
@@ -147,6 +151,15 @@
      /* About page */
     --font-color-title-about: rgb(0, 157, 255);
     --font-color-p-about: rgb(255, 255, 255);
+
+      /* Blog */
+    --background-color-card: rgb(31, 31, 31);
+    --background-color-aside-item: rgb(31, 31, 31);
+    --text-title-h3-item: rgb(0, 157, 255);
+    --text-p-item: rgb(255, 255, 255);
+    --font-subitens-color:rgb(255, 255, 255);
+    --text-footer-item:rgb(255, 255, 255);
+
 
     /* Footer */
     --background-color-footer: rgb(0, 0, 0);

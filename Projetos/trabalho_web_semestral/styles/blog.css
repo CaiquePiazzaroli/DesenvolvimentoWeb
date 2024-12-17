@@ -1,3 +1,4 @@
+/* Parte superiror */
 .margin-200-100 {
     margin-top: 200px;
     margin-bottom: 100px;
@@ -64,23 +65,24 @@
     color: var(--branco-transparente);
 }
 
+
 /* Container Principal */
-.container {
+.container-blog {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
 }
 
-/* Conteúdo Principal - Notícias */
 .container-news {
     flex: 2; /* Ocupa mais espaço */
 }
 
 .news-card {
-    background-color: #fff;
+    background-color: var(--background-color-card);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -99,28 +101,31 @@
 .news-card h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--text-title-h3-item);
 }
 
 .news-card p {
     font-size: 1rem;
-    color: #555;
+    color: var(--text-p-item);
     margin-bottom: 10px;
 }
 
 .news-footer {
     font-size: 0.9rem;
-    color: #777;
+    color: var(--text-footer-item);
 }
 
 /* Sidebar */
-aside {
+.container-aside {
     flex: 1; /* Ocupa menos espaço */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 20px 0px 20px;
     height: fit-content;
+}
+
+.aside-item {
+    background-color: var(--background-color-aside-item);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 /* Estilização da Pesquisa */
@@ -133,26 +138,11 @@ aside {
     font-size: 1rem;
 }
 
-.search-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #29b6f6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.search-box button:hover {
-    background-color: #0288d1;
-}
-
 /* Categorias */
 .categories h3 {
     margin-bottom: 15px;
     font-size: 1.2rem;
-    color: #333;
+    color: var(--text-title-h3-item);
 }
 
 .categories ul {
@@ -166,11 +156,11 @@ aside {
 
 .categories a {
     text-decoration: none;
-    color: #555;
+    color:  var(--font-subitens-color);
 }
 
 .categories a:hover {
-    color: #29b6f6;
+    color: var(--text-title-h3-item);
 }
         
 
@@ -178,7 +168,7 @@ aside {
 .recent-posts h3 {
     margin-bottom: 15px;
     font-size: 1.2rem;
-    color: #333;
+    color: var(--text-title-h3-item);
 }
 
 .recent-post {
@@ -196,12 +186,12 @@ aside {
 
 .recent-post .post-details h4 {
     font-size: 1rem;
-    color: #333;
+    color: var(--text-title-h3-item);
 }
 
 .recent-post .post-details span {
     font-size: 0.9rem;
-    color: #777;
+    color:  var(--font-subitens-color);
 }
 
 
