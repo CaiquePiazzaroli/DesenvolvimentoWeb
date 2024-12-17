@@ -64,6 +64,147 @@
     color: var(--branco-transparente);
 }
 
+/* Container Principal */
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Conteúdo Principal - Notícias */
+.container-news {
+    flex: 2; /* Ocupa mais espaço */
+}
+
+.news-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+
+.news-card .news-content {
+    padding: 15px;
+}
+
+.news-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.news-footer {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Sidebar */
+aside {
+    flex: 1; /* Ocupa menos espaço */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+/* Estilização da Pesquisa */
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.search-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #29b6f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0288d1;
+}
+
+/* Categorias */
+.categories h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.categories ul {
+    list-style: none;
+}
+
+.categories li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #555;
+}
+
+.categories a:hover {
+    color: #29b6f6;
+}
+        
+
+/* Recent Posts */
+.recent-posts h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.recent-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.recent-post img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.recent-post .post-details h4 {
+    font-size: 1rem;
+    color: #333;
+}
+
+.recent-post .post-details span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
 @media only screen and (min-width:768px){
     .about-main-info-container {
         max-width: 50%;

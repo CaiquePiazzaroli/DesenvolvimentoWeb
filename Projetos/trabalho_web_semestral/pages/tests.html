@@ -6,104 +6,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: #f0f0f0;
-    }
+    /* Reset */
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .carousel {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-    .carousel-slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
+        /* Container Principal */
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
 
-    .slide {
-      min-width: 100%;
-      text-align: center;
-      color: white;
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 300px;
-    }
+        /* Conteúdo Principal - Notícias */
+        main {
+            flex: 2; /* Ocupa mais espaço */
+        }
 
-    button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.5);
-      border: none;
-      color: white;
-      font-size: 2rem;
-      padding: 5px 10px;
-      cursor: pointer;
-      border-radius: 50%;
-    }
+        .news-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
 
-    button:hover {
-      background: rgba(0, 0, 0, 0.8);
-    }
+        .news-card img {
+            width: 100%;
+            height: auto;
+        }
 
-    .prev-btn {
-      left: 10px;
-    }
+        .news-card .news-content {
+            padding: 15px;
+        }
 
-    .next-btn {
-      right: 10px;
-    }
+        .news-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
 
-    body {
-      height: 7000px;
-    }
+        .news-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .news-footer {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Sidebar */
+        aside {
+            flex: 1; /* Ocupa menos espaço */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        /* Estilização da Pesquisa */
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .search-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #29b6f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .search-box button:hover {
+            background-color: #0288d1;
+        }
+
+        /* Categorias */
+        .categories h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .categories ul {
+            list-style: none;
+        }
+
+        .categories li {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .categories a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .categories a:hover {
+            color: #29b6f6;
+        }
   </style>
 </head>
 
 <body>
-  <div class="carousel">
-    <div class="carousel-slides">
-      <div class="slide" style="background-color: #ff6f61;">Slide 1</div>
-      <div class="slide" style="background-color: #6f61ff;">Slide 2</div>
-      <div class="slide" style="background-color: #61ff6f;">Slide 3</div>
-    </div>
-    <button class="prev-btn">❮</button>
-    <button class="next-btn">❯</button>
-  </div>
-
-  <script src="script.js"></script>
-  <script>
-    const slides = document.querySelector('.carousel-slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-    let index = 0;
-
-    document.querySelector('.next-btn').addEventListener('click', () => {
-      index = (index + 1) % totalSlides;
-      updateCarousel();
-    });
-
-    document.querySelector('.prev-btn').addEventListener('click', () => {
-      index = (index - 1 + totalSlides) % totalSlides;
-      updateCarousel();
-    });
-
-    function updateCarousel() {
-      const offset = -index * 100;
-      slides.style.transform = `translateX(${offset}%)`;
-    }
-  </script>
+    
 </body>
 
 </html>

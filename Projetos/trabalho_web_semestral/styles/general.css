@@ -68,7 +68,10 @@
 
     /* form */ 
     --font-title-form-color:rgb(31, 31, 31);
-    --form-input-border-color:rgb(0, 157, 255);;
+    --form-input-border-color:rgb(0, 157, 255);
+
+    /* Blog */
+    --background-color-card: #fff;
 
     /* Footer */
     --background-color-footer: rgb(31, 31, 31);
